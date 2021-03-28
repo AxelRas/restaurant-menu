@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Items from './components/Items';
+import data from './menu.json';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      menu: data.items
+    }
+  }
+  render() {
+    return (
+      <div className="App">
+        <div className="title">
+          <h1>Our menu</h1>
+        </div>
+        <div className="navbar">
+          <ul>
+            <li>All</li>
+            <li>Breakfast</li>
+            <li>Lunch</li>
+            <li>Shakes</li>
+          </ul>
+        </div>
+        <Items data={this.state.menu} />
+      </div>
+    );
+  }
 }
 
 export default App;
