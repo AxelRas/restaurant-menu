@@ -8,7 +8,37 @@ class App extends React.Component {
     this.state = {
       menu: data.items
     }
+
+    this.showAll = this.showAll.bind(this);
+    this.showBreakfast = this.showBreakfast.bind(this);
+    this.showLunch = this.showLunch.bind(this);
+    this.showShakes = this.showShakes.bind(this);
   }
+
+  showAll(){
+    this.setState({
+      menu: data.items
+    });
+  }
+
+  showBreakfast(){
+    this.setState({
+      menu: data.items.filter(item => item.category === "breakfast")
+    });
+  }
+
+  showLunch(){
+    this.setState({
+      menu: data.items.filter(item => item.category === "lunch")
+    });
+  }
+
+  showShakes(){
+    this.setState({
+      menu: data.items.filter(item => item.category === "shake")
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -16,12 +46,10 @@ class App extends React.Component {
           <h1>Our menu</h1>
         </div>
         <div className="navbar">
-          <ul>
-            <li>All</li>
-            <li>Breakfast</li>
-            <li>Lunch</li>
-            <li>Shakes</li>
-          </ul>
+          <button onClick={this.showAll} className="nav-button">All</button>
+          <button onClick={this.showBreakfast} className="nav-button">Breakfast</button>
+          <button onClick={this.showLunch} className="nav-button">Lunch</button>
+          <button onClick={this.showShakes} className="nav-button">Shakes</button>
         </div>
         <Items data={this.state.menu} />
       </div>

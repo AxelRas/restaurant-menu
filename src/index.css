@@ -8,23 +8,73 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .navbar {
-  display: table;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
-.navbar ul {
-  border: 2px solid black;
-  list-style-type: none;
+.nav-button {
+  margin: 10px 5px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  justify-content: center;
+}
+
+.item {
+  display: grid;
+  grid-template-areas: 
+  "image text";
+  width: 550px;
+  margin: 30px;
+  /* border: 2px solid black; */
+}
+
+.item img {
+  grid: "image";
+  max-width: 200px;
+  border: 4px solid rgb(182, 121, 9);
+  border-radius: 4px;
+}
+
+.item-text {
+  grid: "text";
+  display: grid;
+  grid-template-areas: 
+  "name-price",
+  "desc";
+  width: 300px;
+  /* border: 2px solid black; */
+}
+
+.item-title-price {
+  grid: "name-price";
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 20px;
+  border-bottom: 2px dotted rgb(255, 255, 255);
+  /* border: 2px solid red; */
 }
 
-.navbar li {
-  margin: 5px 10px;
-  padding: 5px 20px;
+.item-title {
+  position: relative;
+  top: -15px;
+  /* border: 2px solid black; */
+}
+
+.item-price {
+  position: relative;
+  top: -15px;
+  /* border: 2px solid black; */
+}
+
+.item-desc {
+  grid: "desc";
   border: 2px solid black;
 }

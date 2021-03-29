@@ -1,46 +1,46 @@
 {
     "items": [
         {
-            "name": "",
-            "price": 0,
-            "desc": "",
-            "image": "/pictures/",
-            "category": ""
+            "name": "Starbucks Girl Shake",
+            "price": 10,
+            "desc": "Basic white girl? Yeah, right? You know what to do.",
+            "image": "/pictures/shake1.jpg",
+            "category": "shake"
         },
         {
-            "name": "",
-            "price": 0,
-            "desc": "",
-            "image": "/pictures/",
-            "category": ""
+            "name": "\"I'm different\" Girl Shake",
+            "price": 12,
+            "desc": "Are you not like other girls? Are you different? Let the world know by drinking this shake.",
+            "image": "/pictures/shake2.jpg",
+            "category": "shake"
         },
         {
-            "name": "",
-            "price": 0,
-            "desc": "",
-            "image": "/pictures/",
-            "category": ""
+            "name": "'MURICA",
+            "price": 25,
+            "desc": "DO YOU WANT HIGH CHOLESTEROL? HOW ABOUT DIABETES? IF YOU'VE ANSWERED YES TO ANY OF THOSE, THIS IS THE MEAL FOR YOU!",
+            "image": "/pictures/lunch1.jpg",
+            "category": "lunch"
         },
         {
-            "name": "",
-            "price": 0,
-            "desc": "",
-            "image": "/pictures/",
-            "category": ""
+            "name": "\"I'm on a diet\"",
+            "price": 20,
+            "desc": "Want to suffer from malnutrition? Boy, do I have a meal for you.",
+            "image": "/pictures/lunch2.jpg",
+            "category": "lunch"
         },
         {
-            "name": "",
-            "price": 0,
-            "desc": "",
-            "image": "/pictures/",
-            "category": ""
+            "name": "Bodybuilder's Breakfast",
+            "price": 5,
+            "desc": "Wake up at 4 AM? No pain no gain? Is Ronnie Coleman your senpai? Egg yolk is all you've been searching for.",
+            "image": "/pictures/breakfast1.jpg",
+            "category": "breakfast"
         },
         {
-            "name": "",
-            "price": 0,
-            "desc": "",
-            "image": "/pictures/",
-            "category": ""
+            "name": "Elite's Breakfast",
+            "price": 8,
+            "desc": "Pan con manteca y azucar papa que mas queres, manjar de los dioses",
+            "image": "/pictures/breakfast2.jpg",
+            "category": "breakfast"
         }
     ]
 }
