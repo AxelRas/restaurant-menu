@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
 
 html {
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(236, 236, 236);
 }
 
 .App {
@@ -8,10 +9,31 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.title h1 {
+  font-weight: 700;
+  font-size: 3em;
+  border-bottom: 4px solid rgb(182, 121, 9);
 }
 
 .nav-button {
-  margin: 10px 5px;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: rgb(182, 121, 9);
+  background-color: rgb(236, 236, 236);
+  border: none;
+  padding: 5px 15px;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 150ms ease-out;
+}
+
+.nav-button:hover {
+  background-color: rgb(182, 121, 9);
+  color: rgb(236, 236, 236);
 }
 
 .items {
@@ -43,12 +65,13 @@ html {
 }
 
 .item-title-price {
+  font-weight: 700;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  height: 20px;
-  border-bottom: 2px dotted rgb(255, 255, 255);
+  height: 25px;
+  border-bottom: 2px dotted black;
 }
 
 .item-title {
@@ -57,10 +80,48 @@ html {
 }
 
 .item-price {
+  color: rgb(182, 121, 9);
   position: relative;
   top: -15px;
 }
 
 .item-desc {
-  grid: "desc";
+  color:rgb(92, 92, 92);
+}
+
+@media (max-width:1250px) {
+  .items {
+    grid-template-columns: 600px;
+  }
+
+  @media(max-width:700px) {
+    .title h1 {
+      font-size: 2em;
+    }
+    .items {
+      grid-template-columns: 400px;
+    }
+
+    .item {
+      justify-self: center;
+      grid-template-areas: 
+      "image"
+      "text";
+      width: 400px;
+    }
+
+    .item img {
+      justify-self: center;
+      max-width: 300px;
+    }
+
+    .item-text {
+      font-size: 0.9em;
+      justify-self: center;
+    }
+
+    .item-title-price {
+      margin-top: 10px;
+    }
+  }
 }
