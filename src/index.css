@@ -8,11 +8,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* border: 2px solid black; */
-}
-
-.navbar {
-  /* border: 2px solid black; */
 }
 
 .nav-button {
@@ -31,7 +26,6 @@ html {
   "image text";
   width: 550px;
   margin: 30px;
-  /* border: 2px solid black; */
 }
 
 .item img {
@@ -43,38 +37,30 @@ html {
 
 .item-text {
   grid: "text";
-  display: grid;
-  grid-template-areas: 
-  "name-price",
-  "desc";
+  display: flex;
+  flex-direction: column;
   width: 300px;
-  /* border: 2px solid black; */
 }
 
 .item-title-price {
-  grid: "name-price";
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   height: 20px;
   border-bottom: 2px dotted rgb(255, 255, 255);
-  /* border: 2px solid red; */
 }
 
 .item-title {
   position: relative;
   top: -15px;
-  /* border: 2px solid black; */
 }
 
 .item-price {
   position: relative;
   top: -15px;
-  /* border: 2px solid black; */
 }
 
 .item-desc {
   grid: "desc";
-  border: 2px solid black;
 }
